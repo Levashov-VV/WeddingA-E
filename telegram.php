@@ -3,8 +3,8 @@
 $name = $_POST['name'];
 $visit = $_POST['visit'];
 $drink = $_POST['drink'];
-$token = "7093813049:AAGiRrixx3LOEKq7CHukAkDEVROKONUp0UY";
-$chat_id = "-100780075066";
+$token = "";
+$chat_id = "";
 $arr = array(
     'Имя гостя: ' => $name,
     'Играл ли в игру: ' => $visit,
