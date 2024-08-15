@@ -339,6 +339,8 @@ height: 60px;
   height: auto;
 }
 
+/* Адаптив */
+
 @media (max-width: 811px) {
   .image{
     width: 810px;

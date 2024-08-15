@@ -3,8 +3,8 @@
 $name = $_POST['name'];
 $visit = $_POST['visit'];
 $drink = $_POST['drink'];
-$token = "";
-$chat_id = "";
+$token = "7093813049:AAGiRrixx3LOEKq7CHukAkDEVROKONUp0UY";
+$chat_id = "-100780075066";
 $arr = array(
     'Имя гостя: ' => $name,
     'Играл ли в игру: ' => $visit,
@@ -16,5 +16,4 @@ foreach($arr as $key => $value) {
 };
 
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
-
 ?>
