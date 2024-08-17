@@ -190,21 +190,21 @@
       </div>
     </section>
 
-    <form action="telegram.php" method="post" class="form">
+    <form action="telegram.php" method="post" class="form" id="form">
       <div class="name fade-in-up" >
         <label class="nameform-text subTitle">Имя Фамилия</label>
         <label  class="form-text subText">если вы будете с парой или семьей, то внесите все имена, а также возраст детей</label>
-        <input class="name-input" name="name" required placeholder="Ольга и Дима"></input>
+        <input class="name-input" id="name" name="name" required placeholder="Ольга и Дима"></input>
       </div>
 
       <div class="visit fade-in-up">
         <div class="subTitle">Вы когда-нибудь были на играх show today?</div>
         <label class="form-text">
-        <input name="visit" type="radio" name="uniqueRadio">
+        <input id="visit" name="visit" type="radio" name="uniqueRadio">
           <span> Я присутствовал на играх show today</span>
         </label>
         <label class="form-text">
-          <input name="visit" type="radio" name="uniqueRadio">
+          <input id="visit" name="visit" type="radio" name="uniqueRadio">
           <span> Я ни разу не присутствовал на играх show today</span>
         </label>
       </div>
@@ -212,55 +212,55 @@
       <div class="drink fade-in-up">
         <div class="subTitle">Предпочтения по напиткам</div>
         <label class="container">
-          <input name="drink" type="checkbox">
+          <input id="drink" name="drink" type="checkbox">
 
           <span>Водка</span>
       </label>
 
       <label class="container">
-        <input name="drink"type="checkbox">
+        <input id="drink" name="drink"type="checkbox">
 
         <span>Коньяк</span>
       </label>
 
       <label class="container">
-        <input name="drink"type="checkbox">
+        <input id="drink" name="drink"type="checkbox">
 
         <span>Виски</span>
       </label>
 
       <label class="container">
-        <input name="drink" type="checkbox">
+        <input id="drink" name="drink" type="checkbox">
 
         <span>Шампанское</span>
       </label>
 
       <label class="container">
-        <input name="drink" type="checkbox">
+        <input id="drink" name="drink" type="checkbox">
 
         <span>Белое вино сухое</span>
       </label>
 
       <label class="container">
-        <input name="drink" type="checkbox">
+        <input id="drink" name="drink" type="checkbox">
 
         <span>Белое вино п/сладкое или сладкое</span>
       </label>
 
       <label class="container">
-        <input name="drink" type="checkbox">
+        <input id="drink" name="drink" type="checkbox">
 
         <span>Красное вино сухое</span>
       </label>
 
       <label class="container">
-        <input name="drink" type="checkbox">
+        <input id="drink" name="drink" type="checkbox">
 
         <span>Красное вино п/сладкое или сладкое</span>
       </label>
 
       <label class="container">
-        <input name="drink" type="checkbox">
+        <input id="drink" name="drink" type="checkbox">
 
         <span>Не пью алкоголь</span>
       </label>
@@ -280,7 +280,7 @@
       Мы будем счастливы видеть вас!
     </div>
   </footer>
-  
+  <script src="./order.js" ></script>
   <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="./main.js"></script>
