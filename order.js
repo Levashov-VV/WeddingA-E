@@ -1,5 +1,5 @@
-const TOKEN = '7093813049:AAGiRrixx3LOEKq7CHukAkDEVROKONUp0UY';
-const CHAT_ID = '-1002222664443';
+const TOKEN = '';
+const CHAT_ID = '';
 const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
 const getCheckedCheckBoxes = function() {
