@@ -9,7 +9,7 @@
 <body>
   <header class="hidden">
     <div>
-      <img src="./Images/Header_Image.jpg" class="image"></img>
+      <img src="./Images/Header_Image.jpg" loading="lazy" class="image"></img>
     </div>
 
     <div class="header">
@@ -36,7 +36,7 @@
         <div class="text fade-in-up">С любовью, Алексей и Елизавета.</div>
 
         <div class="dots">
-          <img src="./Images/three-dots.svg">
+          <img src="./Images/three-dots.svg" loading="lazy">
         </div>
 
         <div class="title fade-in-up">Программа дня</div>
@@ -45,25 +45,30 @@
           <div class="event">
 
             <div class="event-img marker">
-              <img src="./Images/Marker.svg">
+              <img src="./Images/Marker.svg" loading="lazy">
             </div>
 
             <div class="event-text">
               <div class="timing-text time">16:00</div>
 
-              <div class="timing-text">Сбор гостей в ЗАГСе</div>
+              <div class="timing-text">
+                  Сбор гостей в ЗАГСе 
+              </div>
 
+              <div class="timing-text commit">
+                (по желанию)
+              </div>
+              
               <div class="timing-text commit">
                 Просим взять с собой хорошее настроение и свои улыбки. 
                 ЗАГС находится по адресу: ул.Пушкина 62.<br>
-                (по желанию)
               </div>
             </div>
           </div>
 
           <div class="event">
             <div class="event-img">
-              <img src="./Images/wedding.svg">
+              <img src="./Images/wedding.svg" loading="lazy">
             </div>
 
             <div class="event-text">
@@ -77,7 +82,7 @@
 
           <div class="event">
             <div class="event-img">
-              <img src="./Images/party.svg">
+              <img src="./Images/party.svg" loading="lazy">
             </div>
 
             <div class="event-text">
@@ -91,7 +96,10 @@
 
           <div class="event">
             <div class="event-img">
-              <img src="https://static.tildacdn.com/tild3139-3031-4264-a464-363431303034/LOGO_BLACK_3.png">
+              <img 
+              src="https://static.tildacdn.com/tild3139-3031-4264-a464-363431303034/LOGO_BLACK_3.png"
+              loading="lazy"
+              >
             </div>
 
             <div class="event-text">
@@ -105,7 +113,7 @@
 
           <div class="event">
             <div class="event-img">
-              <img src="./Images/dance.svg">
+              <img src="./Images/dance.svg" loading="lazy">
             </div>
 
             <div class="event-text">
@@ -120,7 +128,7 @@
           <div class="event">
             <div class="event-img">
               <div class="end-img">
-                <img src="./Images/End_Event.svg">
+                <img src="./Images/End_Event.svg" loading="lazy">
               </div>
             </div>
 
@@ -135,7 +143,7 @@
         </div>
 
         <div class="dots">
-          <img src="./Images/three-dots.svg">
+          <img src="./Images/three-dots.svg" loading="lazy">
         </div>
       </div>
     </section>
@@ -154,7 +162,7 @@
         </div>
         
         <div class="place-img fade-in-up">
-          <img src="./Images/Place.jpg" alt="Место проведения">
+          <img src="./Images/Place.jpg" loading="lazy" alt="Место проведения">
         </div>
       </div>
       
@@ -162,28 +170,29 @@
         <div class="place-text title">Как добраться?</div>
 
         <div class="place-text fade-in-up">
-          Мы подготовили для вас карту, чтобы вы точно добрались и порадовали нас своим
+          Мы подготовили для вас карту, чтобы вы точно добрались и порадовали нас своим присутствием
         </div>
 
-        <iframe
+        <iframe 
           class="frame fade-in-up"
           src=
           "https://yandex.ru/map-widget/v1/?um=constructor%3Ade25fb32979e032f935691d5a0a0dca4a76cce56bb07518960fdb84c54fb6873&amp;source=constructor"
+          loading="lazy"
           frameborder="0">
         </iframe>
       </div>
 
       <div class="dots">
-        <img src="./Images/three-dots.svg">
+        <img src="./Images/three-dots.svg" loading="lazy">
       </div>
     </section>
 
     <section class="location fade-in-up">
       <div class="place">
-        <div class="place-text title">Присутствие на торжестве</div>
+        <div class="place-text title">Дорогие гости</div>
 
         <div class="place-text">
-          Ваши ответы на вопросы очень помогут нам при организации<br/> свадьбы.
+          Ваши ответы на вопросы очень помогут нам при организации свадьбы.
         </div>
 
         <div class="place-text">Будем ждать ответ до 01.10.2024 г.</div>
@@ -194,73 +203,73 @@
       <div class="name fade-in-up" >
         <label class="nameform-text subTitle">Имя Фамилия</label>
         <label  class="form-text subText">если вы будете с парой или семьей, то внесите все имена, а также возраст детей</label>
-        <input class="name-input" id="name" name="name" required placeholder="Ольга и Дима"></input>
+        <input class="name-input" id="name" name="name" required placeholder="Дима и Ольга"></input>
       </div>
 
       <div class="visit fade-in-up">
         <div class="subTitle">Вы когда-нибудь были на играх show today?</div>
         <label class="form-text">
-        <input id="visit" name="visit" type="radio" name="uniqueRadio">
-          <span> Я присутствовал на играх show today</span>
+        <input id="visit1" name="visit" type="radio" value="Да">
+          <span>Да</span>
         </label>
         <label class="form-text">
-          <input id="visit" name="visit" type="radio" name="uniqueRadio">
-          <span> Я ни разу не присутствовал на играх show today</span>
+          <input id="visit2" name="visit" type="radio" value="Нет">
+          <span>Нет</span>
         </label>
       </div>
 
       <div class="drink fade-in-up">
         <div class="subTitle">Предпочтения по напиткам</div>
         <label class="container">
-          <input id="drink" name="drink" type="checkbox">
+          <input id="drink1" class="drinked" class name="drink" type="checkbox" value="Водка">
 
           <span>Водка</span>
       </label>
 
       <label class="container">
-        <input id="drink" name="drink"type="checkbox">
+        <input id="drink2" class="drinked" name="drink"type="checkbox" value="Коньяк">
 
         <span>Коньяк</span>
       </label>
 
       <label class="container">
-        <input id="drink" name="drink"type="checkbox">
+        <input id="drink3" class="drinked" name="drink"type="checkbox" value="Виски">
 
         <span>Виски</span>
       </label>
 
       <label class="container">
-        <input id="drink" name="drink" type="checkbox">
+        <input id="drink4" class="drinked" name="drink" type="checkbox" value="Шампанское">
 
         <span>Шампанское</span>
       </label>
 
       <label class="container">
-        <input id="drink" name="drink" type="checkbox">
+        <input id="drink5" class="drinked" name="drink" type="checkbox" value="Белое вино сухое">
 
         <span>Белое вино сухое</span>
       </label>
 
       <label class="container">
-        <input id="drink" name="drink" type="checkbox">
+        <input id="drink6" class="drinked" name="drink" type="checkbox" value="Белое вино п/сладкое или сладкое">
 
         <span>Белое вино п/сладкое или сладкое</span>
       </label>
 
       <label class="container">
-        <input id="drink" name="drink" type="checkbox">
+        <input id="drink7" class="drinked" name="drink" type="checkbox" value="Красное вино сухое">
 
         <span>Красное вино сухое</span>
       </label>
 
       <label class="container">
-        <input id="drink" name="drink" type="checkbox">
+        <input id="drink8" class="drinked" name="drink" type="checkbox" value="Красное вино п/сладкое или сладкое">
 
         <span>Красное вино п/сладкое или сладкое</span>
       </label>
 
       <label class="container">
-        <input id="drink" name="drink" type="checkbox">
+        <input id="drink9" class="drinked" name="drink" type="checkbox" value="Не пью алкоголь">
 
         <span>Не пью алкоголь</span>
       </label>
@@ -274,7 +283,7 @@
   </main>
   <footer class="footer">
     <div>
-      <img class="images fade-in-up" src="./Images/Footer-Image.jpg" alt="Фото вместе">
+      <img class="images fade-in-up" src="./Images/Footer-Image.jpg" loading="lazy" alt="Фото вместе">
     </div>
     <div class="title fade-in-up">
       Мы будем счастливы видеть вас!

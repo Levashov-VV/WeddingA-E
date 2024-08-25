@@ -1,19 +1,32 @@
-const TOKEN = '';
-const CHAT_ID = "";
-const URL_API = `https://api.telegram.org/bot$​{ TOKEN }/sendMessage`;
+const TOKEN = '7093813049:AAGiRrixx3LOEKq7CHukAkDEVROKONUp0UY';
+const CHAT_ID = '-1002222664443';
+const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+const getCheckedCheckBoxes = function() {
+  const checkboxes = document.getElementsByClassName('drinked');
+  const checkboxesChecked = [];
+  for (var index = 0; index < checkboxes.length; index++) {
+    if (checkboxes[index].checked) {
+        checkboxesChecked.push(checkboxes[index].value);
+    }
+  }
+  return checkboxesChecked;
+}
+
+
 
 document.getElementById('form').addEventListener('submit', function(e) {
   e.preventDefault();
   let message = 'Заявка с сайта\n' + 'Имя:' + this.name.value + '\n' + 
-  'Играли ли в игру: ' + this.visit.value + '\n' + 
-  'Буду(будем) пить: ' + this.drink.value;
+  'Играл ли в show today: ' + this.visit.value + '\n' + 
+  'Предпочтения по напиткам: ' + getCheckedCheckBoxes() ;
 
   axios.post(URL_API, {
     chat_id: CHAT_ID,
     parse_mode: 'html',
     text: message
   }) 
-  .then((res) => {
+  .then(() => {
     alert('Сообщение доставлено');
   })
   .catch((err) => {

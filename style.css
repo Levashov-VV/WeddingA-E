@@ -135,7 +135,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 17px;
+  font-size: 18px;
   font-family: "Viaoda Libre", serif;
   gap: 40px;
 }
@@ -166,7 +166,8 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 50%;
+  width: 60%;
+  white-space: revert;
 }
 
 .dots {
@@ -194,8 +195,9 @@ header {
 }
 
 .marker {
-  height: 33px;
-  width: 33px;
+  display: block;
+  max-width: 40px;
+  width: 40px;
 }
 
 .event-text {
@@ -267,8 +269,7 @@ header {
   justify-content: start;
   align-items: start;
   row-gap: 15px;
-  width: 600px;
-
+  width: 90%;
 }
 
 .subTitle {
@@ -293,7 +294,7 @@ header {
   justify-content: start;
   align-items: start;
   row-gap: 15px;
-  width: 600px;
+  width: 90%;
 }
 
 .drink {
@@ -302,7 +303,7 @@ header {
   justify-content: start;
   align-items: start;
   row-gap: 15px;
-  width: 600px;
+  width: 90%;
 }
 
 input[type="checkbox"] {
@@ -335,7 +336,7 @@ height: 60px;
 .images {
   display: flex;
   justify-content: center;
-  width: 45vw;
+  width: 70vw;
   height: auto;
 }
 
@@ -343,22 +344,55 @@ height: 60px;
 
 @media (max-width: 811px) {
   .image{
-    width: 810px;
-    height: 668px;
+    width: 100vw;
+    height: 100vh;
   }
-  
+
   .header-text {
-    font-size: 42px;
+    font-size: 36px;
   }
+
+  .timing {
+    padding-top: 20px;
+  }
+
+  .text {
+    width: 80%;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
   .marker {
-    width: 40px;
+    display: block;
+    max-width: 50px;
+    width: 70px;
+  }
+
+  .place-text {
+    width: 82%;
+    white-space: revert;
+  }
+
+  .place-img {
+    width: 100%;
+  }
+
+  .frame{
+    width: 80%;
+  }
+
+  .images{
+    width: 80vw;
   }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 435px) {
   .image{
-    width: 428px;
-    height: 668px;
+    width: 100vw;
+    height: 100vh;
+    object-position: 35%;
   }
 
   .header-text {
@@ -377,16 +411,22 @@ height: 60px;
   }
 
   .marker {
-    margin-top: 10px;
-    width: 90px;
+    display: block;
+    width: 80px;
+    padding-left: 3px;
   }
 
   .end-img {
     width: 40px;
   }
 
+  .place-img {
+    width: 100%;
+  }
+
   .place-text {
-    width: 80%;
+    width: 75%;
+    white-space: revert;
   }
 
   .frame{
@@ -414,6 +454,29 @@ height: 60px;
   }
 
   .images{
-    width: 100%;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 360px) {
+  .image{
+    width: 360px;
+    height: 800;
+  }
+  .header-text {
+    font-size: 28px;
+  }
+
+  .timing {
+    padding-top: 30px;
+  }
+
+  .frame{
+    width: 80%;
+    height: 60vh;
+  }
+
+  .title {
+    font-size: 28px;
   }
 }
